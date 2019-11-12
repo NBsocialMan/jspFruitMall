@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xgbb.mapper.CommodityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xgbb.entity.Commodity">
+        <id column="commodity_id" property="commodityId" />
+        <result column="commodity_name" property="commodityName" />
+        <result column="commodity_price" property="commodityPrice" />
+        <result column="commodity_picture" property="commodityPicture" />
+        <result column="shelf" property="shelf" />
+        <result column="commodity_hot" property="commodityHot" />
+        <result column="commodity_stock" property="commodityStock" />
+        <result column="commodity_weight" property="commodityWeight" />
+        <result column="commodity_float" property="commodityFloat" />
+        <result column="commodity_level" property="commodityLevel" />
+        <result column="owner_store_id" property="ownerStoreId" />
+        <result column="commodity_category_id" property="commodityCategoryId" />
+        <result column="commodity_introduce" property="commodityIntroduce" />
+        <result column="commodity_salesvolume" property="commoditySalesvolume" />
+        <result column="commodity_poster_picture1" property="commodityPosterPicture1" />
+        <result column="commodity_poster_picture2" property="commodityPosterPicture2" />
+        <result column="commodity_poster_picture3" property="commodityPosterPicture3" />
+        <result column="commodity_currentprice" property="commodityCurrentprice" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        commodity_id, commodity_name, commodity_price, commodity_picture, shelf, commodity_hot, commodity_stock, commodity_weight, commodity_float, commodity_level, owner_store_id, commodity_category_id, commodity_introduce, commodity_salesvolume, commodity_poster_picture1, commodity_poster_picture2, commodity_poster_picture3, commodity_currentprice
+    </sql>
+
+</mapper>

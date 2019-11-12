@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xgbb.mapper.StoreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xgbb.entity.Store">
+        <id column="store_id" property="storeId" />
+        <result column="store_name" property="storeName" />
+        <result column="store_address" property="storeAddress" />
+        <result column="store_introduction" property="storeIntroduction" />
+        <result column="store_picture" property="storePicture" />
+        <result column="store_owner_id" property="storeOwnerId" />
+        <result column="store_poster_picture1" property="storePosterPicture1" />
+        <result column="store_poster_picture2" property="storePosterPicture2" />
+        <result column="store_poster_picture3" property="storePosterPicture3" />
+        <result column="store_state" property="storeState" />
+        <result column="store_hot" property="storeHot" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        store_id, store_name, store_address, store_introduction, store_picture, store_owner_id, store_poster_picture1, store_poster_picture2, store_poster_picture3, store_state, store_hot
+    </sql>
+
+</mapper>

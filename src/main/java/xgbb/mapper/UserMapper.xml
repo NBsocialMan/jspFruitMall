@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xgbb.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xgbb.entity.User">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="role" property="role" />
+        <result column="birthday" property="birthday" />
+        <result column="realname" property="realname" />
+        <result column="gender" property="gender" />
+        <result column="place_of_residence" property="placeOfResidence" />
+        <result column="receive_address" property="receiveAddress" />
+        <result column="telephone" property="telephone" />
+        <result column="receiver" property="receiver" />
+        <result column="post_code" property="postCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, password, email, role, birthday, realname, gender, place_of_residence, receive_address, telephone, receiver, post_code
+    </sql>
+
+</mapper>

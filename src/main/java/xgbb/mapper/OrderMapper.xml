@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xgbb.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xgbb.entity.Order">
+        <id column="order_id" property="orderId" />
+        <result column="order_user_id" property="orderUserId" />
+        <result column="order_store_id" property="orderStoreId" />
+        <result column="order_time" property="orderTime" />
+        <result column="order_price" property="orderPrice" />
+        <result column="order_state" property="orderState" />
+        <result column="address" property="address" />
+        <result column="liaison" property="liaison" />
+        <result column="telephone" property="telephone" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, order_user_id, order_store_id, order_time, order_price, order_state, address, liaison, telephone
+    </sql>
+
+</mapper>
